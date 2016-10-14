@@ -20,8 +20,8 @@ Ingenieria de sistemas y computacion 2016 beta  C.sotodd
 </head>
 
 <body>
-
-  <form name="form3" method="post" action="RegistroCliente.php">
+<ul>
+  <form name="form3" method="post" action="Administrador.php">
 
   <ul>
  	  <li>
@@ -31,17 +31,28 @@ Ingenieria de sistemas y computacion 2016 beta  C.sotodd
 
  <ul>
  	  <li>
- 	Email <input type="text" name="email">
+ 	Telefono <input type="text" name="telefono">
  	  </ul>
  </li>
 
   <ul>
   	  <li>
-  	Password <input type="text" name="password">
+  	Direccion <input type="text" name="direccion">
   	  </ul>
   </li>
 
+	<ul>
+  	  <li>
+  	Cedula <input type="text" name="cedula">
+  	  </ul>
+  </li>
+	<ul>
+			<li>
+	Password <input type="text" name="password">
+			</ul>
+	</li>
 
+</ul>
  <input type= "submit" name="datos" value="Enviar" /><br /><br />
  </form>
 
@@ -56,10 +67,11 @@ if ($_POST['datos'])
 
 
 $nombre = $_POST ['nombre'];
-$email= $_POST ['email'];
-$password= $_POST ['password'];
-
-$query1 = "INSERT INTO cliente (nombre,email,password) VALUES ('$nombre','$email','$password')";
+$telefono= $_POST ['telefono'];
+$direccion= $_POST ['direccion'];
+$cedula=$_POST['cedula'];
+$password=$_POST['password'];
+$query1 = "INSERT INTO Administrador (nombre,telefono,direccion,cedula,password) VALUES ('$nombre','$telefono','$direccion','$cedula','$password')";
 
 
 mysqli_query($dbc,$query1)or die("Query MYSQL ERROR : ".
