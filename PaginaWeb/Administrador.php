@@ -18,7 +18,7 @@ $cliente=htmlentities($_REQUEST['nombre']);
 <html>
 <head>
 <title>
-Ingenieria de sistemas y computacion 2016 beta  C.sotodd
+Administrador
 </title>
 </head>
 
