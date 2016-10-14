@@ -1,5 +1,4 @@
 <?php
-error_reporting(0);
 define('DBNAME', "a6251434_Comida");
 $dbc = mysqli_connect("mysql6.000webhost.com","a6251434_soto","Ing012345",DBNAME);
 if(!$dbc){
@@ -22,11 +21,11 @@ Ingenieria de sistemas y computacion 2016 beta  C.soto
 
 <body>
 
-  <form name="form3" method="post">
+  <form name="form3" method="post" action="RegistroEstablecimiento.php">
 
   <ul>
  	  <li>
- 	  Nombre establecimiento <input type="text" name="nombre">
+ 	  Nombre establecimiento <input type="text" name="nombre" >
  	  </ul>
  </li>
 
@@ -53,21 +52,32 @@ Ingenieria de sistemas y computacion 2016 beta  C.soto
      Pedido Minimo <input type="text" name="pedidoMinimo">
        </ul>
    </li>
+
+   <ul>
+       <li>
+  Costo Domicilio <input type="text" name="costoDomicilio">
+       </ul>
+   </li>
  <input type= "submit" name="datos" value="Enviar" /><br /><br />
  </form>
 
 </body>
 </html>
-<<?php
+<?php
+
 
 if ($_POST['datos'])
 {
-$NombreEspacio = $_POST ['NombreEspacio'];
-$idEspacioAcademico= $_POST ['idEspacioAcademico'];
-$Disponible= $_POST ['Disponible'];
-$fecha= $_POST ['fecha'];
+  # code...
 
-$query1 = "INSERT INTO Espacioacademico (NombreEspacio,idEspacioAcademico,Disponible,fecha) VALUES ('$NombreEspacio','$idEspacioAcademico','$Disponible',$fecha)";
+
+$nombre = $_POST ['nombre'];
+$descripcion= $_POST ['descripcion'];
+$direccion= $_POST ['direccion'];
+$tiempoEntrega= $_POST ['tiempoEntrega'];
+$pedidoMinimo=$_POST['pedidoMinimo'];
+$costoDomicilio=$_POST['costoDomicilio'];
+$query1 = "INSERT INTO Establecimiento (nombre,descripcion,direccion,tiempoEntrega,pedidoMinimo,costoDomicilio) VALUES ('$nombre','$descripcion','$direccion','$tiempoEntrega',$pedidoMinimo,$costoDomicilio)";
 
 
 mysqli_query($dbc,$query1)or die("Query MYSQL ERROR : ".
