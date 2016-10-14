@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14BCC187-9101-7EFC-04A4-575EC8D68E5C" name="Producto">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 02:31:58 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_producto" id="566AF52B-45E5-4492-D215-CFCADE53C208">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 02:33:55 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_categoriafk" id="A1472EEC-9D6F-E619-945B-0D5FD7798CF5">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-13 19:32:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE1B7B56-795F-A3D9-49FC-59125B5D18B2" referredColumn="BF32B360-38F3-AD0B-119A-064880EAF83C"/>
+</associations>
+</Column>
+<Column name="nombre" id="98F86BF7-F2E3-3C97-9011-2EE3C652679D">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-13 19:29:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="44E69FC4-C493-1A8B-E882-6F832B53C9CC">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-13 19:29:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio" id="7FF7C688-23C6-07F6-1FC0-F797FA096245">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-13 19:29:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="51A66F06-D579-F384-E406-E8C6D3C9F7CF" name="Producto_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 02:37:29 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="566AF52B-45E5-4492-D215-CFCADE53C208"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2BDB373E-FC56-FE4F-9598-B61F14827380" name="categoria_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-13 19:32:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1472EEC-9D6F-E619-945B-0D5FD7798CF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

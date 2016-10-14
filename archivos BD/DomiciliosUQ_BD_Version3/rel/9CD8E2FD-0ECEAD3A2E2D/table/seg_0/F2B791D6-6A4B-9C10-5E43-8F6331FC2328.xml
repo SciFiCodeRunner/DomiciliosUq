@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2B791D6-6A4B-9C10-5E43-8F6331FC2328" name="ProductoEstablecimiento">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 02:37:50 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_establecimientofk" id="19700598-499B-1368-CE2A-E182FDBC3E99">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 02:38:50 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06D883EB-53CF-31EF-6A87-D2188307839D" referredColumn="0ED2622D-D937-0789-A48F-1471547E005D"/>
+</associations>
+</Column>
+<Column name="id_productofk" id="89EA3629-818E-10B4-A70E-AAE40C397B4B">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 02:39:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10EACB2A-6339-1D23-E4AE-3FC0114F6BD2" referredColumn="566AF52B-45E5-4492-D215-CFCADE53C208"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E44DD78D-9C9B-7DC2-98C6-746F11C9F9C2" name="ProductoEstablecimiento_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 03:02:42 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19700598-499B-1368-CE2A-E182FDBC3E99"/>
+<colUsage columnID="89EA3629-818E-10B4-A70E-AAE40C397B4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79D9A572-C501-4322-1EBE-8DC259FB9061" name="Establecimiento_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 02:38:50 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19700598-499B-1368-CE2A-E182FDBC3E99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EFE4EFEE-8E82-DCB7-6A65-8F7EF9AEEA20" name="Producto_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 02:39:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89EA3629-818E-10B4-A70E-AAE40C397B4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="DomiciliosUQ_BD_Version3" id="CEB0A7EB-2E65-EEF1-002D-08F806DA8386" version="3.5">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 02:21:01 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>BDdomicilioVersion1</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>CEB0A7EB-2E65-EEF1-002D-08F806DA8386</designId>
+</OSDM_Design>

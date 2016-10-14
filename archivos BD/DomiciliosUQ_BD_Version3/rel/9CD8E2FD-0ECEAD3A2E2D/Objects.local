@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="9923FAA1-9354-1BAA-1F45-7367061A242F" name="Establecimiento" seqName="seg_0"/>
+   <object objectType="Table" objectID="500ECF9C-8773-2EFF-3C3B-D1CE9EC8CF18" name="Pedido" seqName="seg_0"/>
+   <object objectType="Table" objectID="14BCC187-9101-7EFC-04A4-575EC8D68E5C" name="Producto" seqName="seg_0"/>
+   <object objectType="Table" objectID="F2B791D6-6A4B-9C10-5E43-8F6331FC2328" name="ProductoEstablecimiento" seqName="seg_0"/>
+   <object objectType="Table" objectID="C2096CCA-EC73-5926-CEEC-BC969818FAE2" name="calificacion" seqName="seg_0"/>
+   <object objectType="Table" objectID="595A23FF-7906-90F3-26D3-799CEA1D2042" name="categoria" seqName="seg_0"/>
+   <object objectType="Table" objectID="9A1AFA0D-CF6B-DD74-DA60-EC232FD4F3DD" name="cliente" seqName="seg_0"/>
+   <object objectType="Table" objectID="6BAD1C2D-572C-1A98-FA4E-6CC3DEC0C49B" name="comentario" seqName="seg_0"/>
+   <object objectType="Table" objectID="76AA4997-7932-CBC4-5557-F844B445C7E7" name="detallePedido" seqName="seg_0"/>
+   <object objectType="Table" objectID="040D24AD-0608-23A2-B889-9D78E7ADEEEC" name="horario" seqName="seg_0"/>
+   <object objectType="Table" objectID="80E9E5F8-F552-4B7A-134F-4590A4469E92" name="horarioEstablecimiento" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="06D883EB-53CF-31EF-6A87-D2188307839D" name="Establecimiento_FK" seqName="seg_0" containerID="F2B791D6-6A4B-9C10-5E43-8F6331FC2328" refContainerID="9923FAA1-9354-1BAA-1F45-7367061A242F"/>
+   <object objectType="FKIndexAssociation" objectID="D8C024CD-39D5-4BA4-EEA1-7D0C5EE206DA" name="Establecimiento_FKv2" seqName="seg_0" containerID="C2096CCA-EC73-5926-CEEC-BC969818FAE2" refContainerID="9923FAA1-9354-1BAA-1F45-7367061A242F"/>
+   <object objectType="FKIndexAssociation" objectID="EB0C625C-8115-C890-0EAE-D814074E59A8" name="Establecimiento_FKv3" seqName="seg_0" containerID="6BAD1C2D-572C-1A98-FA4E-6CC3DEC0C49B" refContainerID="9923FAA1-9354-1BAA-1F45-7367061A242F"/>
+   <object objectType="FKIndexAssociation" objectID="DAC1BADD-5A8D-B4E5-DA5F-9A51E39553A8" name="Establecimiento_FKv4" seqName="seg_0" containerID="80E9E5F8-F552-4B7A-134F-4590A4469E92" refContainerID="9923FAA1-9354-1BAA-1F45-7367061A242F"/>
+   <object objectType="FKIndexAssociation" objectID="FE1B7B56-795F-A3D9-49FC-59125B5D18B2" name="categoria_FK" seqName="seg_0" containerID="14BCC187-9101-7EFC-04A4-575EC8D68E5C" refContainerID="595A23FF-7906-90F3-26D3-799CEA1D2042"/>
+   <object objectType="FKIndexAssociation" objectID="41E3A385-4604-4800-1CDA-6B6EAB623912" name="Pedido_FK" seqName="seg_0" containerID="76AA4997-7932-CBC4-5557-F844B445C7E7" refContainerID="500ECF9C-8773-2EFF-3C3B-D1CE9EC8CF18"/>
+   <object objectType="FKIndexAssociation" objectID="AFC13E3E-009F-3C4F-53AE-7C7AA6B81597" name="ProductoEstablecimiento_FK" seqName="seg_0" containerID="500ECF9C-8773-2EFF-3C3B-D1CE9EC8CF18" refContainerID="F2B791D6-6A4B-9C10-5E43-8F6331FC2328"/>
+   <object objectType="FKIndexAssociation" objectID="10EACB2A-6339-1D23-E4AE-3FC0114F6BD2" name="Producto_FK" seqName="seg_0" containerID="F2B791D6-6A4B-9C10-5E43-8F6331FC2328" refContainerID="14BCC187-9101-7EFC-04A4-575EC8D68E5C"/>
+   <object objectType="FKIndexAssociation" objectID="23036EE1-4D8E-5ABA-7936-6F18118079FD" name="cliente_FK" seqName="seg_0" containerID="500ECF9C-8773-2EFF-3C3B-D1CE9EC8CF18" refContainerID="9A1AFA0D-CF6B-DD74-DA60-EC232FD4F3DD"/>
+   <object objectType="FKIndexAssociation" objectID="02E2FF10-A8FC-6183-27DC-516310EB0639" name="cliente_FKv2" seqName="seg_0" containerID="6BAD1C2D-572C-1A98-FA4E-6CC3DEC0C49B" refContainerID="9A1AFA0D-CF6B-DD74-DA60-EC232FD4F3DD"/>
+   <object objectType="FKIndexAssociation" objectID="E1C0D7BB-2DDD-EC6C-8096-081569CEE5A4" name="horario_FK" seqName="seg_0" containerID="80E9E5F8-F552-4B7A-134F-4590A4469E92" refContainerID="040D24AD-0608-23A2-B889-9D78E7ADEEEC"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

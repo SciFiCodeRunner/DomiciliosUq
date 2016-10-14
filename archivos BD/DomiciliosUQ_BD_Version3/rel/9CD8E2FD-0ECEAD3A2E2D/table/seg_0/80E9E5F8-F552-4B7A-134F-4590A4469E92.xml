@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="80E9E5F8-F552-4B7A-134F-4590A4469E92" name="horarioEstablecimiento">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 04:16:45 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_horarioEstablecimiento" id="956774B5-5275-7DB8-4A22-F5CC2442CB68">
+<createdBy>admin</createdBy>
+<createdTime>2016-10-13 15:20:36 UTC</createdTime>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_establecimientofk" id="35E80303-873A-CFB0-00A7-7E92667C08A4">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 04:17:56 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DAC1BADD-5A8D-B4E5-DA5F-9A51E39553A8" referredColumn="0ED2622D-D937-0789-A48F-1471547E005D"/>
+</associations>
+</Column>
+<Column name="id_horariofk" id="5234FC0E-B774-A655-78DC-CE2CAF6239CD">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 04:17:21 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1C0D7BB-2DDD-EC6C-8096-081569CEE5A4" referredColumn="8E243EC1-70DC-8526-DA76-0411D6207CBA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23566CD1-A298-A719-B35C-DE9C6B521C60" name="horarioEstablecimiento_PK">
+<createdBy>admin</createdBy>
+<createdTime>2016-10-13 15:20:36 UTC</createdTime>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="956774B5-5275-7DB8-4A22-F5CC2442CB68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9225B536-818A-621D-179C-2ECBA5198F74" name="horario_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 04:17:21 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5234FC0E-B774-A655-78DC-CE2CAF6239CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD3F4074-4EE2-39AD-3DA2-3325D39ABF0D" name="Establecimiento_FKv4">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 04:17:56 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35E80303-873A-CFB0-00A7-7E92667C08A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

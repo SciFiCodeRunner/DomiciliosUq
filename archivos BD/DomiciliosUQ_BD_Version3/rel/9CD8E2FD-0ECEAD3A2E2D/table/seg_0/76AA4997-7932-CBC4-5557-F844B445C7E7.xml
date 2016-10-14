@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="76AA4997-7932-CBC4-5557-F844B445C7E7" name="detallePedido">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 03:05:21 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_detallePedido" id="1E1231BD-1720-0920-B443-FAC8244A795C">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 03:18:01 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_pedidofk" id="A811C682-B7F9-1B34-8FA0-17440C621C9F">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 03:19:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="41E3A385-4604-4800-1CDA-6B6EAB623912" referredColumn="1EC1EBC1-12B3-5235-08AC-CA118535E5D8"/>
+</associations>
+</Column>
+<Column name="cantidad" id="DA0B1F6D-5A21-9B9B-B8DB-3CA245A22BE1">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 03:18:50 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="00975127-9B85-2AC2-7679-26AA86EBAB81" name="detallePedido_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 03:18:01 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E1231BD-1720-0920-B443-FAC8244A795C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26EE6B72-5BE1-8B5C-E6F4-E15F5FD01BDB" name="Pedido_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-12 03:19:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>DomiciliosUQ_BD_Version3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A811C682-B7F9-1B34-8FA0-17440C621C9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
