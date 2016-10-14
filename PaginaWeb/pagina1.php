@@ -13,6 +13,8 @@
 
 <body>
 <a href="RegistroEstablecimiento.php">Registrar Establecimiento</a>
+
+<a href="RegistroCliente.php"> Registrar Cliente  </a>
 </body>
 
 
