@@ -12,12 +12,12 @@
 
 
 <body>
-<a href="Establecimiento.php"> Registrar Establecimiento</a>
+<a href="Establecimiento.php">Establecimiento</a>
 
-<a href="Cliente.php"> Registrar Cliente  </a>
-<a href="Administrador.php" >Registrar Administrador</a>
+<a href="Cliente.php">  Cliente  </a>
+<a href="Administrador.php" > Administrador</a>
 
-<a href="LoginAdministrador.php">login Administrador</a>
+<a href="LoginAdministrador.php"> login Administrador</a>
 <br>
 
 <form  action="pagina1.php" method="post">

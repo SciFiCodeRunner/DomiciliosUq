@@ -91,7 +91,7 @@ Ingenieria de sistemas y computacion 2016 beta  C.soto
 
 
 <input type= "submit" name="datos2" value="Modificar Establecimiento" /><br /><br />
-<input type= "submit" name="datos23" value="Eliminar establecimiento" /><br /><br />
+<input type= "submit" name="datos3" value="Eliminar establecimiento" /><br /><br />
 </form>
 
 </html>
@@ -175,10 +175,16 @@ mysqli_close($dbc);
 echo "Los datos han sido insertados en la base de datos";
 }
 ?>
+
 <?php
 if(isset($_REQUEST['datos3'])){
 $nombre=$_REQUEST['nombre'];
 
-$query="DELETE* from Establecimiento where nombre='$nombre'";
-$obtener=$query[0];
+$query="DELETE  from Establecimiento where nombre='$nombre'";
+mysqli_query($dbc,$query)or die("Query MYSQL ERROR : ".
+mysqli_error($dbc));
+
+mysqli_close($dbc);
+echo "Los datos han sido borrados en la base de datos";
+}
 ?>
