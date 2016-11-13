@@ -1,0 +1,36 @@
+body{
+background-image :url("http://www.bestfon.info/images/joomgallery/originals/comida_9/food_and_spoons_20130408_1153298924.jpg");
+ width:900; height:1300;
+ position:relative;
+ margin: 0 auto;
+
+}
+#navegador{
+	widht:900; height:300;
+	margin:0 auto auto;
+}
+#registro{
+	width:50%;height:500;
+	margin : 0 auto 0 auto;
+	  background-color: red;
+	float:left;
+}
+
+#cabecera{
+  width:auto;
+  margin: 0 auto 0 auto;
+  background-color:blue;
+}
+
+
+.actualizar{
+	height:500; width:50%;
+  margin: 0 auto 0 auto;
+  float: right;
+  background-color:yellow;
+}
+#establecimiento{
+	float:left;
+	height:300; width:100%;
+	background-color:pink;
+}

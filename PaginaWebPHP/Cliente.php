@@ -24,6 +24,7 @@ Ingenieria de sistemas y computacion 2016 beta  C.sotodd
 </head>
 
 <body>
+<h1> Registro Cliente</h1>
 
   <form name="form3" method="post" action="Cliente.php">
 
@@ -103,7 +104,7 @@ echo "Los datos han sido insertados en la base de datos";
 if(isset($_REQUEST['datos2'])){
 $nombre=$_REQUEST['nombre'];
 $query="SELECT * from cliente where nombre='$nombre'";
-$cierto=mysqli_query($dbc,$query)or die ("error al procesar la consulta pene");
+$cierto=mysqli_query($dbc,$query)or die ("error al procesar la consulta");
 
 if(!$cierto){
 echo "No existe!";
@@ -111,7 +112,7 @@ echo "No existe!";
 
 if($row=mysqli_fetch_array($cierto)){
 echo  "<form action='Cliente.php' method='post'>
-<input type='text' name='id_cliente' value='$row[id_cliente]'><a>id_cliente<a><br>
+<input type='hidden' name='id_cliente' value='$row[id_cliente]'><br>
 <input type='text' name='nombre' value='$row[nombre]'><a>nombre</a><br>
 <input type='text' name='email' value='$row[email]'><a>email</a><br>
 <input type='text' name='password' value='$row[password]'><a>password</a><br>

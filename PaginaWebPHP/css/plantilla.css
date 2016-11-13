@@ -1,0 +1,41 @@
+body {
+
+background-image: url("https://cdn.wallpaper.com/main/galleries/15/10/malamen-1.jpg");
+}
+#global {
+
+ width:900; height:1300;
+ margin: 0 auto 0 auto;
+ background-color: black;
+}
+#cabecera {
+ width:auto;
+ margin: 0 auto 0 auto;
+ background-color: 	#B22222;
+}
+#navegacion {
+ width:auto;
+ margin: 0 auto 0 auto;
+
+background-image: url("http://ardugrill.ee/wp-content/uploads/2016/01/cropped-Dark-wood-texture-12-Wallpapers-HD-2560x1600.jpg");
+}
+#principal {
+ width:650px;
+ margin: 0 auto 0 auto;
+ background-color:#FFFAF0;
+ float: left;
+}
+.anuncios1 {
+ width:240px;
+ height:1000px;
+ margin: 0 auto 0 auto;
+
+ float: right;
+ background-image: url("http://previews.123rf.com/images/redcollegiya/redcollegiya1106/redcollegiya110600037/9923502-textura-transparente-brillante-dibujos-animados-de-comida-r-pida-Foto-de-archivo.jpg");
+}
+#pie {
+ width:800px;
+ margin: 0 auto 0 auto;
+ background-color: #FFFAF0;
+ float: left;
+}
