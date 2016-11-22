@@ -283,10 +283,13 @@ if (!$dbs) {
 
 </body>
 
-			
- <h5> ¿No tienes cuenta? Crea una cuenta <a href="form.html">Aqui</a></h5>
+                        <h5> ¿No tienes cuenta? Crea una cuenta <a href="Cliente.php">Aqui</a></h5>
      
-				</div >
+			
+
+			
+
+	</div >
 	</form>
 
 
@@ -406,7 +409,7 @@ print"<div><div id ='posicion'> <img src='http://ingsoft2016uq.comli.com/proyect
  <div id='posiciondentrobtn'> <input  name=Pedido value=Pedido type=submit  style='background-color: #FF9900; width:200; height:50'/></div> 
 </div></div>";
 echo "<i>"." ". $rows[2]."<br>"."</i>";
-echo " <b>"." Entrega en: ". $rows[3]."<br>"."</b>" ;
+echo " Entrega en: ". $rows[3]."<br>";
 echo "<HR size=6 width=98% align=center>";
 echo "</form>";
 echo "</div>";

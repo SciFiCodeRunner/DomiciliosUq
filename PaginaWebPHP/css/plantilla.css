@@ -1,41 +1,128 @@
 body {
 
-background-image: url("https://cdn.wallpaper.com/main/galleries/15/10/malamen-1.jpg");
+background-color:black;
 }
 #global {
 
- width:900; height:1300;
+ width:95%; height:1300;
  margin: 0 auto 0 auto;
- background-color: black;
+
+
 }
 #cabecera {
  width:auto;
  margin: 0 auto 0 auto;
- background-color: 	#B22222;
+ background-color:  #d21834;
 }
 #navegacion {
  width:auto;
  margin: 0 auto 0 auto;
-
+text-color:white;
 background-image: url("http://ardugrill.ee/wp-content/uploads/2016/01/cropped-Dark-wood-texture-12-Wallpapers-HD-2560x1600.jpg");
 }
 #principal {
- width:650px;
+ width:70%;
  margin: 0 auto 0 auto;
- background-color:#FFFAF0;
+background-color:
+
+	 #fff7e6;
  float: left;
 }
 .anuncios1 {
- width:240px;
- height:1000px;
+ width:28%;
+ height:1200;
  margin: 0 auto 0 auto;
-
+text-align:center;
  float: right;
  background-image: url("http://previews.123rf.com/images/redcollegiya/redcollegiya1106/redcollegiya110600037/9923502-textura-transparente-brillante-dibujos-animados-de-comida-r-pida-Foto-de-archivo.jpg");
 }
 #pie {
- width:800px;
+ width:100% ;
+ height: 200px;
  margin: 0 auto 0 auto;
- background-color: #FFFAF0;
+ background-color: black;
  float: left;
+}
+#Administrador{
+	  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	
+	
+	
+}
+
+#cabecera ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black ;
+}
+
+  #cabecera ul li {
+    float: left;
+	border-right: 1px solid #bbb;
+}
+
+#cabecera ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	text-color:white;
+}
+
+/* Change the link color to #111 (black) on hover */
+#cabecera ul li a:hover {
+    background-color:  	#FF8C00;
+}
+#cabecera li:last-child {
+    border-right: none;
+}
+#anuncio1{
+	width:100%; height:14%;
+
+	background-image:url("https://userscontent2.emaze.com/images/5f79eb87-b465-442c-9ad5-c414654d0f10/6305f50b-7b71-41e3-9228-638d28c8aad3.jpg");
+	
+}
+
+#posicion{
+width:auto;
+ margin: 0 auto 0 auto;
+text-color:white;
+}
+#posiciondentrobtn{
+	
+width:auto;
+ margin: 0 auto 0 auto;
+text-color:white;
+float:right;
+}
+	#popupBoxOnePosition{
+				top: 0; left: 0; position: fixed; width: 100%; height: 120%;
+				background-color: rgba(0,0,0,0.7); display: none;
+			}
+			#popupBoxTwoPosition{
+				top: 0; left: 0; position: fixed; width: 100%; height: 120%;
+				background-color: rgba(0,0,0,0.7); display: none;
+				
+			}
+
+			.popupBoxWrapper{
+				width: 550px; margin: 50px auto; text-align: left;
+			}
+			.popupBoxContent{
+				background-color: #808080; padding: 15px;
+			}
+			
+			
+			table {
+  border: red 5px solid;
 }

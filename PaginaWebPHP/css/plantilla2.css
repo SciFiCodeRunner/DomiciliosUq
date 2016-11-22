@@ -1,6 +1,6 @@
 body{
-background-image :url("http://www.bestfon.info/images/joomgallery/originals/comida_9/food_and_spoons_20130408_1153298924.jpg");
- width:900; height:1300;
+background-image :url("http://imagenes.4ever.eu/data/download/abstractos/fondo-de-colores,-lineas-159722.jpg");
+ width:97%; height:900;
  position:relative;
  margin: 0 auto;
 
@@ -10,10 +10,11 @@ background-image :url("http://www.bestfon.info/images/joomgallery/originals/comi
 	margin:0 auto auto;
 }
 #registro{
-	width:50%;height:500;
-	margin : 0 auto 0 auto;
-	  background-color: red;
-	float:left;
+	width:70%;height:400;
+	margin : 0 auto;
+	  background-color: #6F6F6F;
+	float: center;
+	text-align:center;
 }
 
 #cabecera{
@@ -32,5 +33,13 @@ background-image :url("http://www.bestfon.info/images/joomgallery/originals/comi
 #establecimiento{
 	float:left;
 	height:300; width:100%;
-	background-color:pink;
+	background-color:#80ff80;
+	text-align:center;
+}
+div {
+  margin: .4em 0;
+}
+div label {
+  width: 25%;
+  float: left;
 }

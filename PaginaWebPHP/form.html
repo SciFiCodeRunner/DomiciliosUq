@@ -18,39 +18,40 @@ $cliente=htmlentities($_REQUEST['nombre']);
 
 <html>
 <head>
-<link rel="stylesheet" href="css\plantilla4.css" type="text/css" media="all">
+<link rel="stylesheet" href="css\prueba.css" type="text/css" media="all">
 <title>
 Ingenieria de sistemas y computacion 2016 beta  C.sotodd
 </title>
 </head>
 
 <body>
-<h1> Registro Cliente</h1>
 
-  <form name="form3" method="post" action="Cliente.php">
-
+<div class="wrapper">
  
-   <div> 
- 	 <label for = "nombre"> Nombre:</label><input type="text" name="nombre" >
-   </div>
-  <div>
- 	<label for = "Email ">Email </label><input type="text" name="email" >
- </div>
 
-  <div>
-  	<label for = "Email ">Password </label><input type="text" name="password" >
-  </div>
+  <h1>Registrar Cliente</h1>
+  <p>Registrate gratis para tener una cuenta valida y poder
+  acceder a todas las opciones de nuestra pagina.</p>
+  <form class="form" method="post" action="yourpage.html">
+   
+   <input type="text" class="nombre" placeholder="Nombre">
+    <div>
+      <p class="name-help">Por favor escribe tu nombre.</p>
+    </div>
+    <input type="email" class="email" placeholder="Email">
+     <div>
+      <p class="email-help">Please enter your current email address.</p>
+    </div>
 
-
- <input type= "submit" name="datos" value="Enviar" /><br /><br />
- </form>
-
-
- <form name="form1" method="post" action="Cliente.php">
+    <input type="password" class="password" placeholder="Password">
+     <div>
+      <p class="password-help">Please chech your password.</p>
+    </div>
+    <input type="submit" class="submit" value="Registrar">
+<form name="form1" method="post" action="Cliente.php">
 
  	<ul>
- 
-  selecciona Nombre del Cliente e email a modificar:<br>
+ <p> selecciona Nombre del Cliente e email a modificar:</p><br>
   <select name="nombre" >
   <option value=" " selected>Elige</option>
   <?php while($row=mysqli_fetch_array($res)){?>
@@ -66,6 +67,13 @@ Ingenieria de sistemas y computacion 2016 beta  C.sotodd
  <input type= "submit" name="datos2" value="Modificar cliente" /><br /><br />
  <input type= "submit" name="datos3" value="Eliminar cliente" /><br /><br />
  <input type= "button" name="regresar" onclick=" location.href='pagina1.php'" value="Regresar" /><br /><br />
+ </form>
+  </form>
+ </div>
+</div>
+<p class="optimize">
+  Optimized for Chrome & Firefox!
+</p>
  </form>
 </body>
 

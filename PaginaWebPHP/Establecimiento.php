@@ -45,14 +45,13 @@ $res=mysqli_query($dbc,$query)or die ("error al procesar la consulta");
 			var longitud =pos.coords.longitude;
 			var precision = pos.coords.accuracy;
 		
-			var lng =document.getElementsByName("test2");
-			long.value=longitud;
-		var lat=document.getElementsByName("test");
-			mitexto.value=latitud.toFixed(6);
-			milat.value=latitud.toFixed(6);
-			milong.value=longitud.toFixed(6);
+			var latPrecisa=latitud.toFixed(6);
+			var longPrecisa=longitud.toFixed(6);
+			long.value=longPrecisa;
+	
+			mitexto.value=latPrecisa;
 			var contenedor = document.getElementById("map");
-			var centro = new google.maps.LatLng(latitud,longitud);
+			var centro = new google.maps.LatLng(latPrecisa,longPrecisa);
 			var propiedades =
 			{
                 zoom: 15,
@@ -89,36 +88,60 @@ $res=mysqli_query($dbc,$query)or die ("error al procesar la consulta");
 		
 					<form name="form2" method="post" action="Establecimiento.php" >
 						 <ul>
-							   <li>
-							   Longitud :<input type="text" value="" name="test" id="mitexto">					 
-							  </li><br>
-							   <li>
-							   Latitud  : <input type="text" value=""  name="test2" id="long">
-							    </li><br>
-					 	   <li>
-					 	  Nombre  : <input type="text" name="nombre" >
-						  </li><br>
+							   
+							
+                                                          <div> 
+							  <label for = "longitud"> Longitud : </label><input type="text" value=""  name="test" id="mitexto">
+							     </div>
+							 <div>
+							 <label for = "latitud">  Latitud  :</label> <input type="text" value=""  name="test2" id="long">
+							  </div>
+					 	   <div>
+					 	  <label for = "nombre"> Nombre  :</label> <input type="text" name="nombre" >
+						  </div>
 						    
-					 	  <li>
-					 	Descripcion  :<input type="text" name="descripcion">
-						</li><br>
+					 	  <div>
+					 	  <label for = "Descripcion">Descripcion  :</label><input type="text" name="descripcion">
+						 </div>
 					  
-					  	  <li>
-					  	Direccion   : <input type="text" name="direccion">
-						</li><br>
+					  	   <div>
+					  	<label for = "Direccion">Direccion   :</label> <input type="text" name="direccion">
+						 </div>
 					   
-					   	  <li>
-					   	Tiempo Entrega: <input type="text" name="tiempoEntrega">
-					   </li><br>
-					       <li>
-					     Pedido Minimo: <input type="text" name="pedidoMinimo">
-					    </li><br>
-					       <li>
-					  Costo Domicilio: <input type="text" name="costoDomicilio">
-					  </li><br>
-					    </ul>
+					   	     <div>
+					   	<label for = "Tiempo ">Tiempo Entrega:</label> <input type="text" name="tiempoEntrega">
+					    </div>
+					        <div>
+					     <label for = "Pedido ">Pedido Minimo:</label> <input type="text" name="pedidoMinimo">
+					  </div>
+					        <div>
+					 <label for = "Costo "> Costo Domicilio:</label> <input type="text" name="costoDomicilio">
+					  </div>
+					    
+</ul>
+						
 					 <input type= "submit" name="datos" value="Enviar Formulario Registro" /><br /><br />
+					 
 					 </form>
+					 
+	 <form  method="post" enctype="multipart/form-data">
+            <input type="file" name="archivo" id="archivo"></input>
+            <input type="submit" value="Subir archivo"></input>
+        </form>
+<?php
+if ($_FILES['archivo']["error"] > 0)
+
+  {
+
+  echo "Error: " . $_FILES['archivo']['error'] . "<br>";
+
+  }
+
+else
+  {
+move_uploaded_file($_FILES['archivo']['tmp_name'],"imagenes/" . $_FILES['archivo']['name']);
+  }
+?>
 					
 					 <?php
 if ($_POST['datos'])
@@ -141,107 +164,6 @@ echo "Los datos han sido insertados en la base de datos";
 }
 ?>
 					</div>
-		<div class= "actualizar ">
-					<h1>
-						Actualizar Informacion Establecimiento
-					</h1>
-					<form name="form1" method="post" action="Establecimiento.php">
-					 	  <li>
-					 selecciona Nombre del Establecimiento a modificar:
-					 <select name="nombre" >
-					 <option value=" "selected>Elige</option>
-					 <?php while($row=mysqli_fetch_array($res)){
-						 ?>
-					 <option value="<?php echo $row['nombre']?>">
-					 <?php echo htmlentities($row['nombre']);?>
-					 </option>
-					  </option>
-					 <?php } ?>
-					 </select>
-					 </li>
-					 <br>
-					<input type= "submit" name="datos2" value="Modificar Establecimiento" > <br>
-					<input type= "submit" name="datos3" value="Eliminar establecimiento" >		<br>
-					</form>
-					<?php
-if(isset($_REQUEST['datos2'])){
-$nombre=$_REQUEST['nombre'];
-$query3="select * from Establecimiento where nombre='$nombre'";
-$obtener=$query[0];
-$cierto=mysqli_query($dbc,$query3)or die ("error al procesar la consulta");
-if(!$cierto){
-echo "No existe!";
-}
-if($row=mysqli_fetch_array($cierto)){
-echo  "<form action='Establecimiento.php' method='post'>
-<input type='hidden' name='id_establecimiento' value='$row[id_establecimiento]'>
-<input type='text' name='nombre' value='$row[nombre]'><a>nombre</a><br>
-<input type='text' name='direccion' value='$row[direccion]'><a>direccion</a><br>
-<input type='text' name='descripcion' value='$row[descripcion]'><a>descripcion</a><br>
-<input type='text' name='tiempoEntrega' value='$row[tiempoEntrega]'><a>tiempoEntrega</a><br>
-<input type='text' name='pedidoMinimo' value='$row[pedidoMinimo]'><a>pedidoMinimo</a><br>
-<input type='text' name='costoDomicilio' value='$row[costoDomicilio]'><a>costoDomicilio</a>
-<input type='submit' name='Modificar' value='Modificar'>
-</form>";
-}}
-if(isset($_REQUEST['Modificar'])){
-$id_establecimiento=$_REQUEST['id_establecimiento'];
-$nombre=$_REQUEST['nombre'];
-$direccion=$_REQUEST['direccion'];
-$descripcion=$_REQUEST['descripcion'];
-$tiempoEntrega=$_REQUEST['tiempoEntrega'];
-$pedidoMinimo=$_REQUEST['pedidoMinimo'];
-$costoDomicilio=$_REQUEST['costoDomicilio'];
-$queryi="UPDATE Establecimiento set nombre='$nombre',direccion='$direccion',descripcion='$descripcion',tiempoEntrega='$tiempoEntrega',pedidoMinimo='$pedidoMinimo',costoDomicilio='$costoDomicilio' WHERE id_establecimiento='$id_establecimiento'";//consulta sql
-$val=mysqli_query($dbc,$queryi)or die ("error al procesar la consulta");
-echo "Datos Modificados Correctamente<br><br>";
-echo "<a href='Principal1.html'>Regresar</a>";
-}
-?>
-<?php
-if(isset($_REQUEST['datos3'])){
-$nombre=$_REQUEST['nombre'];
-$query="DELETE  from Establecimiento where nombre='$nombre'";
-mysqli_query($dbc,$query)or die("Query MYSQL ERROR : ".
-mysqli_error($dbc));
-mysqli_close($dbc);
-echo "Los datos han sido borrados en la base de datos";
-}
-?>
-			</div>
-			<div id="establecimiento">
-			<h1> ver establecimientos cercanos a tu posicion </h1>
-<form name="form3" method="post" >
-<input type="hidden" value="" name ="test4" id="milat">
-<input type="hidden" value ="" name="test5" id="milong">
-<?php
-if(isset($_REQUEST['datosVerCercano'])){
-	$milat=$_REQUEST['test4'];
-	$milong=$_REQUEST['test5'];
-$lati= substr($milat, 0, 9);
-$longi= substr($milong, 0, 9);
 
-echo $lati;
-echo $longi;
-	//COORDENADAS POLARES PLANETA TIERRA
-$query2= "SELECT  nombre, (6371 * ACOS(
-																SIN(RADIANS(lat)) * SIN(RADIANS($lati))
-																+ COS(RADIANS(lng - $longi)) * COS(RADIANS(lat))
-																* COS(RADIANS($lati))
-																)
-									 ) AS distance
-FROM Establecimiento
-HAVING distance < 3
-ORDER BY distance ASC    ";
-$resultado= mysqli_query($dbc,$query2)or die ("error al procesar la consulta");
-while($rows=mysqli_fetch_array($resultado)){
-echo "Lugar: ". $rows[0]."<br>";
-echo "Cercania Km:  ".  $rows[1]."<br>" ;
-}
-}
-?>
-<input type= "submit" name="datosVerCercano" value="Ver establecimientos cercanos" /><br /><br />
- </form>
- </div>
 	    </body>
 	</html>
